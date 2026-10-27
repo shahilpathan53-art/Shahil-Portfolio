@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahil Pathan — Software Developer | Full-Stack Web Development | ML Enthusiast</title>
+  <meta name="description" content="Portfolio of Shahil Pathan — Software Developer and MCA student specializing in full-stack web development, building responsive web applications, practical backend solutions, and data-driven projects.">
+  <meta name="author" content="Shahil Pathan">
+  <meta name="theme-color" content="#08090D">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shahil Pathan — Software Developer Portfolio">
+  <meta property="og:description" content="Software Developer and MCA student specializing in full-stack web development and machine learning.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Preload Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shahil Pathan",
+    "jobTitle": "Software Developer",
+    "email": "shahilpathan53@gmail.com",
+    "url": "https://github.com/shahilpathan53-art",
+    "sameAs": [
+      "https://github.com/shahilpathan53-art",
+      "https://www.linkedin.com/in/shahil-pathan-66a2a639a/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Custom Cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient Canvas Background -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="#top" class="navbar__logo" aria-label="Shahil Pathan — Home">
+        <span class="navbar__logo-text">SP</span>
+      </a>
+
+      <div class="navbar__links">
+        <a href="#home" class="navbar__link active" data-nav>Home</a>
+        <a href="#about" class="navbar__link" data-nav>About</a>
+        <a href="#skills" class="navbar__link" data-nav>Skills</a>
+        <a href="#projects" class="navbar__link" data-nav>Projects</a>
+        <a href="#terminal" class="navbar__link" data-nav>Terminal</a>
+        <a href="#education" class="navbar__link" data-nav>Education</a>
+        <a href="#contact" class="navbar__link" data-nav>Contact</a>
+      </div>
+
+      <div class="navbar__right">
+        <div class="navbar__status">
+          <span class="navbar__status-dot" aria-hidden="true"></span>
+          Open to opportunities
+        </div>
+        <a href="#contact" class="navbar__cta magnetic-btn" data-magnetic>
+          Let's Talk
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="navbar__mobile-menu" aria-label="Mobile navigation">
+      <a href="#home" class="navbar__mobile-link active">Home</a>
+      <a href="#about" class="navbar__mobile-link">About</a>
+      <a href="#skills" class="navbar__mobile-link">Skills</a>
+      <a href="#projects" class="navbar__mobile-link">Projects</a>
+      <a href="#terminal" class="navbar__mobile-link">Terminal</a>
+      <a href="#education" class="navbar__mobile-link">Education</a>
+      <a href="#contact" class="navbar__mobile-link">Contact</a>
+      <a href="#contact" class="navbar__mobile-cta">Let's Talk</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section id="home" class="hero section">
+    <div class="container container--wide">
+      <div class="hero__inner">
+
+        <!-- Left: Content -->
+        <div class="hero__content">
+          <div class="hero__label anim-fade-up" data-delay="200">
+            <span class="hero__label-dot" aria-hidden="true"></span>
+            Software Developer · MCA Student
+          </div>
+
+          <h1 class="hero__heading anim-fade-up" data-delay="400">
+            <span class="hero__heading-line">Turning ideas into</span>
+            <span class="hero__heading-line"><span class="gradient-text">responsive &amp;</span></span>
+            <span class="hero__heading-line"><span class="gradient-text">practical</span></span>
+            <span class="hero__heading-line">web experiences.</span>
+          </h1>
+
+          <p class="hero__name anim-fade-up" data-delay="600">Shahil Pathan</p>
+
+          <p class="hero__description anim-fade-up" data-delay="800">
+            I'm a developer focused on building responsive web applications, practical backend solutions, and data-driven projects. Currently pursuing my MCA at Uka Tarsadia University, I enjoy turning ideas into useful digital experiences while continuously strengthening my technical skills.
+          </p>
+
+          <div class="hero__actions anim-fade-up" data-delay="1000">
+            <a href="#projects" class="btn btn--primary magnetic-btn" data-magnetic>
+              Explore My Projects
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="assets/resume/Shahil_Pathan_Resume.pdf" download class="btn btn--secondary magnetic-btn" data-magnetic>
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Resume
+            </a>
+          </div>
+
+          <div class="hero__socials anim-fade-up" data-delay="1100">
+            <a href="https://www.linkedin.com/in/shahil-pathan-66a2a639a/" target="_blank" rel="noopener noreferrer" class="hero__social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/shahilpathan53-art" target="_blank" rel="noopener noreferrer" class="hero__social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Portrait visual -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__visual-grid"></div>
+          <div class="hero__portrait-ring"></div>
+          <div class="hero__portrait-glow"></div>
+          <img class="hero__portrait" src="assets/shahil-profile.png" alt="">
+          <div class="hero__code-mark">&lt;/&gt;</div>
+          <div class="hero__profile-chip">
+            <span>AVAILABLE FOR WORK</span>
+            <strong>Full-Stack Developer</strong>
+          </div>
+          <div class="hero__float-tag hero__float-tag--1">
+            <span>+</span> React · Node.js
+          </div>
+          <div class="hero__float-tag hero__float-tag--2">
+            <span>+</span> Python · ML
+          </div>
+          <div class="hero__float-tag hero__float-tag--3">
+            <span>+</span> MongoDB · MySQL
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+       ============================================================ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section__label reveal">About</div>
+      <h2 class="section__title reveal reveal-delay-1">A little about me.</h2>
+
+      <div class="about__grid">
+        <div class="about__text reveal reveal-delay-2">
+          <p>
+            I'm Shahil Pathan, a software developer and MCA student interested in building useful, well-designed digital products. My projects have given me opportunities to explore frontend interfaces, backend APIs, database management, and machine learning fundamentals.
+          </p>
+          <p>
+            I enjoy learning by building, improving my implementation skills, and understanding how different technologies work together to solve real-world problems.
+          </p>
+
+          <!-- Education Highlight -->
+          <div class="about__edu">
+            <div class="about__edu-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 1 4 3 6 3s6-2 6-3v-5"></path></svg>
+              <span>MCA — Uka Tarsadia University</span>
+              <span class="about__edu-badge about__edu-badge--current">Currently Pursuing</span>
+            </div>
+            <div class="about__edu-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 1 4 3 6 3s6-2 6-3v-5"></path></svg>
+              <span>BCA — VNSGU</span>
+              <span class="about__edu-badge about__edu-badge--completed">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__cards">
+          <div class="about__card reveal reveal-delay-2">
+            <div class="about__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3>Practical Development</h3>
+            <p>Focus on building working applications rather than only studying theory.</p>
+          </div>
+          <div class="about__card reveal reveal-delay-3">
+            <div class="about__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            </div>
+            <h3>Continuous Learning</h3>
+            <p>Exploring programming languages, frameworks, databases, and development tools.</p>
+          </div>
+          <div class="about__card reveal reveal-delay-4">
+            <div class="about__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            </div>
+            <h3>Problem-Solving Mindset</h3>
+            <p>Breaking requirements into manageable tasks and building structured solutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION — Interactive Constellation
+       ============================================================ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section__label reveal">Toolkit</div>
+      <h2 class="section__title reveal reveal-delay-1">Technologies I work with.</h2>
+      <p class="section__subtitle reveal reveal-delay-2">Tools and technologies I've used across academic and personal projects.</p>
+
+      <div class="skills__constellation reveal" id="skills-constellation">
+        <!-- Skills will be rendered by JS as interactive nodes -->
+      </div>
+
+      <!-- Fallback grid for no-JS / mobile -->
+      <div class="skills__categories" id="skills-grid-fallback">
+        <div class="skills__category reveal">
+          <div class="skills__category-header">
+            <div class="skills__category-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+            <h3 class="skills__category-title">Programming Languages</h3>
+          </div>
+          <div class="skills__list">
+            <span class="skills__tag" data-category="languages">C</span>
+            <span class="skills__tag" data-category="languages">C++</span>
+            <span class="skills__tag" data-category="languages">Java</span>
+            <span class="skills__tag" data-category="languages">Python</span>
+            <span class="skills__tag" data-category="languages">Dart</span>
+            <span class="skills__tag" data-category="languages">JavaScript</span>
+          </div>
+        </div>
+        <div class="skills__category reveal reveal-delay-1">
+          <div class="skills__category-header">
+            <div class="skills__category-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+            <h3 class="skills__category-title">Web Development</h3>
+          </div>
+          <div class="skills__list">
+            <span class="skills__tag" data-category="frontend">HTML5</span>
+            <span class="skills__tag" data-category="frontend">CSS3</span>
+            <span class="skills__tag" data-category="frontend">Bootstrap</span>
+            <span class="skills__tag" data-category="frontend">PHP</span>
+            <span class="skills__tag" data-category="frontend">React.js</span>
+          </div>
+        </div>
+        <div class="skills__category reveal reveal-delay-2">
+          <div class="skills__category-header">
+            <div class="skills__category-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg></div>
+            <h3 class="skills__category-title">Backend Development</h3>
+          </div>
+          <div class="skills__list">
+            <span class="skills__tag" data-category="backend">Node.js</span>
+            <span class="skills__tag" data-category="backend">Express.js</span>
+          </div>
+        </div>
+        <div class="skills__category reveal">
+          <div class="skills__category-header">
+            <div class="skills__category-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg></div>
+            <h3 class="skills__category-title">Databases</h3>
+          </div>
+          <div class="skills__list">
+            <span class="skills__tag" data-category="database">MySQL</span>
+            <span class="skills__tag" data-category="database">SQLite</span>
+            <span class="skills__tag" data-category="database">MongoDB</span>
+          </div>
+        </div>
+        <div class="skills__category reveal reveal-delay-1">
+          <div class="skills__category-header">
+            <div class="skills__category-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <h3 class="skills__category-title">Tools & Platforms</h3>
+          </div>
+          <div class="skills__list">
+            <span class="skills__tag" data-category="tools">Git</span>
+            <span class="skills__tag" data-category="tools">GitHub</span>
+            <span class="skills__tag" data-category="tools">VS Code</span>
+            <span class="skills__tag" data-category="tools">XAMPP</span>
+            <span class="skills__tag" data-category="tools">NPM</span>
+          </div>
+        </div>
+        <div class="skills__category reveal reveal-delay-2">
+          <div class="skills__category-header">
+            <div class="skills__category-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></div>
+            <h3 class="skills__category-title">CS Fundamentals</h3>
+          </div>
+          <div class="skills__list">
+            <span class="skills__tag" data-category="fundamentals">OOP</span>
+            <span class="skills__tag" data-category="fundamentals">DBMS</span>
+            <span class="skills__tag" data-category="fundamentals">UI/UX</span>
+            <span class="skills__tag" data-category="fundamentals">Networking</span>
+            <span class="skills__tag" data-category="fundamentals">Linux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION — with Filters
+       ============================================================ -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section__label reveal">Selected Work</div>
+      <h2 class="section__title reveal reveal-delay-1">Projects built with purpose.</h2>
+      <p class="section__subtitle reveal reveal-delay-2">A selection of academic and personal projects exploring web development, application architecture, databases, and machine learning.</p>
+
+      <!-- Project Filters -->
+      <div class="projects__filters reveal" id="project-filters">
+        <button class="projects__filter active" data-filter="all">All Projects</button>
+        <button class="projects__filter" data-filter="fullstack">Full-Stack</button>
+        <button class="projects__filter" data-filter="frontend">Frontend</button>
+        <button class="projects__filter" data-filter="backend">Backend</button>
+        <button class="projects__filter" data-filter="database">Database</button>
+        <button class="projects__filter" data-filter="ml">Machine Learning</button>
+      </div>
+
+      <div class="projects__grid" id="projects-grid">
+
+        <!-- PROJECT 01: Cycle Mart PHP (Featured) -->
+        <div class="project-card project-card--featured reveal" data-tags="frontend,backend,database,fullstack">
+          <div class="project-card__preview">
+            <div class="project-card__preview-art">
+              <div class="preview-art preview-art--ecommerce">
+                <div class="preview-art__gradient"></div>
+                <div class="preview-art__pattern"></div>
+                <div class="preview-art__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                </div>
+                <div class="preview-art__ui-element" style="top:15%;left:12%;">PHP · MySQL</div>
+                <div class="preview-art__ui-element" style="bottom:18%;right:10%;">E-commerce</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__number">Project 01</div>
+            <div class="project-card__category">PHP · MySQL · E-commerce</div>
+            <h3 class="project-card__title">Online Cycle Mart</h3>
+            <p class="project-card__description">An online bicycle shopping web application designed to provide a convenient browsing and shopping experience. The project uses PHP for server-side functionality and a responsive interface built with HTML, CSS, and Bootstrap.</p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">PHP</span>
+              <span class="project-card__tag">HTML5</span>
+              <span class="project-card__tag">CSS3</span>
+              <span class="project-card__tag">Bootstrap</span>
+              <span class="project-card__tag">MySQL</span>
+              <span class="project-card__tag">XAMPP</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/shahilpathan53-art/Cycle-Mart-PHP" target="_blank" rel="noopener noreferrer" class="project-card__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> View on GitHub</a>
+              <a href="#" class="project-card__link project-card__link--details" data-project="1">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 02: Cycle Sales System -->
+        <div class="project-card reveal reveal-delay-1" data-tags="fullstack,frontend,backend,database">
+          <div class="project-card__preview">
+            <div class="project-card__preview-art">
+              <div class="preview-art preview-art--mern">
+                <div class="preview-art__gradient"></div>
+                <div class="preview-art__pattern"></div>
+                <div class="preview-art__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+                <div class="preview-art__ui-element" style="top:12%;right:10%;">MERN Stack</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__number">Project 02</div>
+            <div class="project-card__category">MERN Stack · Full-Stack</div>
+            <h3 class="project-card__title">Cycle Sales System</h3>
+            <p class="project-card__description">A full-stack bicycle sales application built with React, Node.js, Express.js, and MongoDB. Users can browse bicycles and manage shopping-related interactions through a responsive interface backed by RESTful APIs.</p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">React</span>
+              <span class="project-card__tag">Node.js</span>
+              <span class="project-card__tag">Express.js</span>
+              <span class="project-card__tag">MongoDB</span>
+              <span class="project-card__tag">Vite</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/shahilpathan53-art/Cycle-Mart-React" target="_blank" rel="noopener noreferrer" class="project-card__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> View on GitHub</a>
+              <a href="#" class="project-card__link project-card__link--details" data-project="2">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 03: Uber Management System -->
+        <div class="project-card reveal reveal-delay-2" data-tags="fullstack,frontend,backend,database">
+          <div class="project-card__preview">
+            <div class="project-card__preview-art">
+              <div class="preview-art preview-art--uber">
+                <div class="preview-art__gradient"></div>
+                <div class="preview-art__pattern"></div>
+                <div class="preview-art__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+                <div class="preview-art__ui-element" style="bottom:15%;left:8%;">MEAN Stack</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__number">Project 03</div>
+            <div class="project-card__category">MEAN Stack · Management App</div>
+            <h3 class="project-card__title">Uber Management System</h3>
+            <p class="project-card__description">A full-stack ride-management web application concept built with Angular, TypeScript, Node.js, Express.js, and MongoDB. Focuses on organizing ride-related records and providing a structured management interface.</p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Angular</span>
+              <span class="project-card__tag">TypeScript</span>
+              <span class="project-card__tag">Node.js</span>
+              <span class="project-card__tag">Express.js</span>
+              <span class="project-card__tag">MongoDB</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/shahilpathan53-art/Angular-Uber" target="_blank" rel="noopener noreferrer" class="project-card__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> View on GitHub</a>
+              <a href="#" class="project-card__link project-card__link--details" data-project="3">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 04: RTO Management System -->
+        <div class="project-card reveal" data-tags="fullstack,frontend,backend,database">
+          <div class="project-card__preview">
+            <div class="project-card__preview-art">
+              <div class="preview-art preview-art--rto">
+                <div class="preview-art__gradient"></div>
+                <div class="preview-art__pattern"></div>
+                <div class="preview-art__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></div>
+                <div class="preview-art__ui-element" style="top:12%;left:8%;">MERN Stack</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__number">Project 04</div>
+            <div class="project-card__category">MERN Stack · Administrative Systems</div>
+            <h3 class="project-card__title">RTO Management System</h3>
+            <p class="project-card__description">A vehicle and driving-license management application concept designed to organize transport-related records and administrative workflows. Built with React, Node.js, Express.js, and MongoDB.</p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">React</span>
+              <span class="project-card__tag">Node.js</span>
+              <span class="project-card__tag">Express.js</span>
+              <span class="project-card__tag">MongoDB</span>
+              <span class="project-card__tag">Bootstrap</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/shahilpathan53-art/RTO-Management-System" target="_blank" rel="noopener noreferrer" class="project-card__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> View on GitHub</a>
+              <a href="#" class="project-card__link project-card__link--details" data-project="4">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 05: Graduate Admission Prediction -->
+        <div class="project-card reveal reveal-delay-1" data-tags="ml,backend,database">
+          <div class="project-card__preview">
+            <div class="project-card__preview-art">
+              <div class="preview-art preview-art--ml">
+                <div class="preview-art__gradient"></div>
+                <div class="preview-art__pattern"></div>
+                <div class="preview-art__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></div>
+                <div class="preview-art__ui-element" style="top:10%;right:8%;">ML · Python</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__number">Project 05</div>
+            <div class="project-card__category">Machine Learning · Python · Data Analysis</div>
+            <h3 class="project-card__title">Graduate Admission Prediction</h3>
+            <p class="project-card__description">A machine-learning-based web application that estimates graduate admission chances from academic and profile-related inputs. Uses a Linear Regression model and a Kaggle dataset with academic indicators.</p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Python</span>
+              <span class="project-card__tag">Flask</span>
+              <span class="project-card__tag">Scikit-learn</span>
+              <span class="project-card__tag">Pandas</span>
+              <span class="project-card__tag">NumPy</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/shahilpathan53-art/Data-Analytics-Project" target="_blank" rel="noopener noreferrer" class="project-card__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> View on GitHub</a>
+              <a href="#" class="project-card__link project-card__link--details" data-project="5">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 06: Music Store DB Analysis -->
+        <div class="project-card reveal reveal-delay-2" data-tags="database">
+          <div class="project-card__preview">
+            <div class="project-card__preview-art">
+              <div class="preview-art preview-art--db">
+                <div class="preview-art__gradient"></div>
+                <div class="preview-art__pattern"></div>
+                <div class="preview-art__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg></div>
+                <div class="preview-art__ui-element" style="bottom:12%;right:10%;">MySQL · Analysis</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__number">Additional Project</div>
+            <div class="project-card__category">MySQL · Data Analysis</div>
+            <h3 class="project-card__title">Music Store Database Analysis</h3>
+            <p class="project-card__description">A database analysis project focused on exploring customer behavior and revenue trends in a music store dataset. Involved writing SQL queries to generate insights relevant to sales and marketing.</p>
+            <div class="project-card__tags"><span class="project-card__tag">MySQL</span></div>
+            <div class="project-card__actions">
+              <a href="https://github.com/shahilpathan53-art" target="_blank" rel="noopener noreferrer" class="project-card__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> View Profile</a>
+              <a href="#" class="project-card__link project-card__link--details" data-project="6">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       INTERACTIVE TERMINAL
+       ============================================================ -->
+  <section id="terminal" class="terminal-section section">
+    <div class="container">
+      <div class="section__label reveal">Developer Console</div>
+      <h2 class="section__title reveal reveal-delay-1">Interactive Terminal.</h2>
+      <p class="section__subtitle reveal reveal-delay-2">Type a command to explore my profile. Try <code>help</code> to get started.</p>
+
+      <div class="terminal reveal" id="terminal">
+        <div class="terminal__header">
+          <div class="terminal__dots">
+            <span class="terminal__dot terminal__dot--red"></span>
+            <span class="terminal__dot terminal__dot--yellow"></span>
+            <span class="terminal__dot terminal__dot--green"></span>
+          </div>
+          <span class="terminal__title">shahil@portfolio:~</span>
+          <div class="terminal__controls">
+            <button class="terminal__clear-btn" id="terminal-clear-btn" title="Clear terminal" aria-label="Clear terminal">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+            </button>
+          </div>
+        </div>
+        <div class="terminal__body" id="terminal-output">
+          <div class="terminal__line terminal__line--system">Welcome to Shahil's portfolio terminal. Type <span class="terminal__cmd-highlight">help</span> to see available commands.</div>
+        </div>
+        <div class="terminal__input-line">
+          <span class="terminal__prompt">$</span>
+          <input type="text" class="terminal__input" id="terminal-input" placeholder="Type a command..." autocomplete="off" spellcheck="false" aria-label="Terminal command input">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION SECTION — Animated Timeline
+       ============================================================ -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section__label reveal">Education</div>
+      <h2 class="section__title reveal reveal-delay-1">My academic journey.</h2>
+
+      <div class="education__timeline-v2">
+        <div class="education__timeline-line" aria-hidden="true"></div>
+
+        <!-- MCA -->
+        <div class="education__card-v2 reveal reveal-delay-2">
+          <div class="education__card-marker" aria-hidden="true">
+            <div class="education__card-marker-dot education__card-marker-dot--active"></div>
+          </div>
+          <div class="education__card-content">
+            <div class="education__card-status education__card-status--current">
+              <span class="education__card-status-dot" aria-hidden="true"></span>
+              Currently Pursuing
+            </div>
+            <h3 class="education__card-degree">Master of Computer Applications (MCA)</h3>
+            <p class="education__card-university">Uka Tarsadia University</p>
+            <p class="education__card-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Gujarat, India
+            </p>
+          </div>
+        </div>
+
+        <!-- BCA -->
+        <div class="education__card-v2 reveal reveal-delay-3">
+          <div class="education__card-marker" aria-hidden="true">
+            <div class="education__card-marker-dot"></div>
+          </div>
+          <div class="education__card-content">
+            <div class="education__card-status education__card-status--completed">
+              <span class="education__card-status-dot" aria-hidden="true"></span>
+              Completed
+            </div>
+            <h3 class="education__card-degree">Bachelor of Computer Applications (BCA)</h3>
+            <p class="education__card-university">Veer Narmad South Gujarat University (VNSGU)</p>
+            <p class="education__card-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Gujarat, India
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ACHIEVEMENTS SECTION
+       ============================================================ -->
+  <section id="achievements" class="achievements section">
+    <div class="container">
+      <div class="section__label reveal">Highlights</div>
+      <h2 class="section__title reveal reveal-delay-1">Achievements & activities.</h2>
+
+      <div class="achievements__grid">
+        <div class="achievement__card reveal reveal-delay-2">
+          <div class="achievement__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+          <h3 class="achievement__title">5+ Projects Built</h3>
+          <p class="achievement__text">Academic and personal projects spanning web development, full-stack applications, and machine learning.</p>
+        </div>
+        <div class="achievement__card reveal reveal-delay-3">
+          <div class="achievement__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></div>
+          <h3 class="achievement__title">GitHub Portfolio</h3>
+          <p class="achievement__text">Active project repository with source code for all major projects publicly available.</p>
+        </div>
+        <div class="achievement__card reveal reveal-delay-4">
+          <div class="achievement__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></div>
+          <h3 class="achievement__title">Coding Competition Runner-Up</h3>
+          <p class="achievement__text">Achieved runner-up placement in a coding competition. Additional details can be updated as available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GITHUB SECTION
+       ============================================================ -->
+  <section id="github" class="github-section section">
+    <div class="container">
+      <div class="section__label reveal">Open Source</div>
+      <h2 class="section__title reveal reveal-delay-1">GitHub Profile.</h2>
+
+      <div class="github__card reveal reveal-delay-2">
+        <div class="github__card-header">
+          <div class="github__avatar">SP</div>
+          <div class="github__info">
+            <h3 class="github__name">Shahil Pathan</h3>
+            <p class="github__username">@shahilpathan53-art</p>
+          </div>
+          <a href="https://github.com/shahilpathan53-art" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm magnetic-btn" data-magnetic>
+            View Profile
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </div>
+        <div class="github__repos">
+          <a href="https://github.com/shahilpathan53-art/Cycle-Mart-PHP" target="_blank" rel="noopener noreferrer" class="github__repo">
+            <div class="github__repo-name">Cycle-Mart-PHP</div>
+            <div class="github__repo-lang"><span class="github__lang-dot" style="background:#4F5D95;"></span>PHP</div>
+          </a>
+          <a href="https://github.com/shahilpathan53-art/Cycle-Mart-React" target="_blank" rel="noopener noreferrer" class="github__repo">
+            <div class="github__repo-name">Cycle-Mart-React</div>
+            <div class="github__repo-lang"><span class="github__lang-dot" style="background:#61DAFB;"></span>React</div>
+          </a>
+          <a href="https://github.com/shahilpathan53-art/Angular-Uber" target="_blank" rel="noopener noreferrer" class="github__repo">
+            <div class="github__repo-name">Angular-Uber</div>
+            <div class="github__repo-lang"><span class="github__lang-dot" style="background:#DD0031;"></span>Angular</div>
+          </a>
+          <a href="https://github.com/shahilpathan53-art/RTO-Management-System" target="_blank" rel="noopener noreferrer" class="github__repo">
+            <div class="github__repo-name">RTO-Management-System</div>
+            <div class="github__repo-lang"><span class="github__lang-dot" style="background:#61DAFB;"></span>React</div>
+          </a>
+          <a href="https://github.com/shahilpathan53-art/Data-Analytics-Project" target="_blank" rel="noopener noreferrer" class="github__repo">
+            <div class="github__repo-name">Data-Analytics-Project</div>
+            <div class="github__repo-lang"><span class="github__lang-dot" style="background:#3572A5;"></span>Python</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section__label reveal">Get in Touch</div>
+      <h2 class="section__title reveal reveal-delay-1">Have a project or opportunity in mind?</h2>
+      <p class="section__subtitle reveal reveal-delay-2">I'm open to connecting about software development opportunities, internships, collaborative projects, and ideas worth building.</p>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal reveal-delay-3">
+          <div class="contact__item" id="copy-email" title="Click to copy email address" role="button" tabindex="0" aria-label="Copy email address to clipboard">
+            <div class="contact__item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+            <div><div class="contact__item-label">Email</div><div class="contact__item-value">shahilpathan53@gmail.com</div></div>
+            <span class="contact__copy-feedback">Copied!</span>
+          </div>
+          <a href="https://github.com/shahilpathan53-art" target="_blank" rel="noopener noreferrer" class="contact__item" aria-label="Visit GitHub profile">
+            <div class="contact__item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></div>
+            <div><div class="contact__item-label">GitHub</div><div class="contact__item-value">shahilpathan53-art</div></div>
+          </a>
+          <a href="https://www.linkedin.com/in/shahil-pathan-66a2a639a/" target="_blank" rel="noopener noreferrer" class="contact__item" aria-label="Visit LinkedIn profile">
+            <div class="contact__item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></div>
+            <div><div class="contact__item-label">LinkedIn</div><div class="contact__item-value">Shahil Pathan</div></div>
+          </a>
+          <a href="assets/resume/Shahil_Pathan_Resume.pdf" download class="contact__item" aria-label="Download resume">
+            <div class="contact__item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
+            <div><div class="contact__item-label">Resume</div><div class="contact__item-value">Download PDF</div></div>
+          </a>
+        </div>
+
+        <form class="contact__form reveal reveal-delay-3" id="contact-form" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="contact-name" class="form__label">Name</label>
+              <input type="text" id="contact-name" class="form__input" placeholder="Your name" required>
+              <span class="form__error">Please enter your name.</span>
+            </div>
+            <div class="form__group">
+              <label for="contact-email" class="form__label">Email</label>
+              <input type="email" id="contact-email" class="form__input" placeholder="your@email.com" required>
+              <span class="form__error">Please enter a valid email.</span>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="contact-subject" class="form__label">Subject</label>
+            <input type="text" id="contact-subject" class="form__input" placeholder="How can I help?" required>
+            <span class="form__error">Please enter a subject.</span>
+          </div>
+          <div class="form__group">
+            <label for="contact-message" class="form__label">Message</label>
+            <textarea id="contact-message" class="form__textarea" placeholder="Your message..." required></textarea>
+            <span class="form__error">Please enter your message.</span>
+          </div>
+          <button type="submit" class="form__submit magnetic-btn" data-magnetic>
+            Send Message
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+          <!-- <p class="form__note">This form opens your email client with a pre-filled message. To set up server-side form handling, integrate a free service such as Formspree or EmailJS.</p> -->
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__text">&copy; <span id="current-year"></span> Designed and built by <span>Shahil Pathan</span>.</p>
+        <div class="footer__links">
+          <a href="https://github.com/shahilpathan53-art" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> GitHub</a>
+          <a href="https://www.linkedin.com/in/shahil-pathan-66a2a639a/" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn</a>
+          <a href="mailto:shahilpathan53@gmail.com" class="footer__link" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Email</a>
+          <a href="#top" class="footer__link" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg> Top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       PROJECT MODAL
+       ============================================================ -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal">
+      <button class="modal__close" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal__header">
+        <div class="modal__number">Project 01</div>
+        <h3 class="modal__title">Project Name</h3>
+        <div class="modal__category">Category</div>
+      </div>
+      <div class="modal__body">
+        <div class="modal__section"><h4 class="modal__section-title">Overview</h4><p id="modal-overview"></p></div>
+        <div class="modal__section"><h4 class="modal__section-title">Implementation Approach</h4><p id="modal-approach"></p></div>
+        <div class="modal__section"><h4 class="modal__section-title">Key Features</h4><div class="modal__features" id="modal-features"></div></div>
+        <div class="modal__section"><h4 class="modal__section-title">Technology Stack</h4><div class="modal__tech-tags" id="modal-tech"></div></div>
+        <div class="modal__section"><h4 class="modal__section-title">Learning Outcomes</h4><p id="modal-learning"></p></div>
+        <div class="modal__actions">
+          <a href="#" id="modal-github" target="_blank" rel="noopener noreferrer" class="modal__btn modal__btn--primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <!-- Status Widget -->
+  <div class="status-widget" id="status-widget" aria-hidden="true">
+    <div class="status-widget__dot"></div>
+    <span class="status-widget__text" id="status-widget-text">Portfolio Online</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
